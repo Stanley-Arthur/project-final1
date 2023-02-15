@@ -32,14 +32,11 @@ const Navbar = () => {
     }
   return (
     
-     <div className=' fixed w-full h-20 shadow-xl z-[100] bg-gray-900'>
-        <div className=' flex xl:justify-around justify-between  items-center w-full h-full px-2 2xl:px-16'>
-            <div className='inline-flex cursor-pointer  '>
-                <GiSmart className='text-5xl text-[#f7AB0A] animate-pulse   lg:text-4xl'/> 
-                <h1 className='text-3xl text-white  lg:text-3xl'>SmartSoft<span className='animate-pulse  text-blue-700'>BUSINESS</span></h1>
-
+     <div className=' fixed w-full  h-32 shadow-xl z-[100] bg-gray-900 '>
+        <div className=' flex xl:justify-between justify-between  items-center w-full h-full  px-2 2xl:px-16'>
+            <div className='text-white  mr-9 w-[120px] h-[120px]  '>
+            <Image src="/img/20230213_143501_0000.png" width={2000} height={2000} className="w-full h-full"/>
             </div>
-
             <div className='hidden md:block text-white'>
                 <NavItems/>
                 
@@ -57,7 +54,7 @@ const Navbar = () => {
                 )}
             </div>
           
-                <div>
+            <div>
             <Link href="/cart">
                 <div className='md:relative xl:relative'>
                     <div className='md:flex md:justify-center  hidden '>  
@@ -70,15 +67,14 @@ const Navbar = () => {
 
         </div>
         <div className={nav?`md:hidden fixed left-0 top-0 w-full h-screen bg-black/70`:""}>
-          <div className={nav?`fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#8dcae9] p-10 ease-in-out duration-500 `:
+          <div className={nav?`fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf1f3] p-10 ease-in-out duration-500 `:
               `fixed left-[-100%] top-0 p-10 ease-in-out duration-500 `}>
                 <div>
                     <div className='flex w-full items-center justify-between'>
-                        <div className='inline-flex cursor-pointer  '>
-                            <GiSmart className='text-3xl text-[#f7AB0A] animate-pulse   lg:text-4xl'/> 
-                            <h1 className='text-xl  text-white'>SmartSoft<span className='text-blue-700 animate-pulse uppercase'>Business</span></h1>
-
-                        </div> 
+                       <div className='inline-flex cursor-pointer   w-32 h-32 '>
+                         <Image src="/img/20230213_143501_0000.png" width={2000} height={2000} className="w-full h-full"/>
+                        </div>
+ 
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ' >
                             <AiOutlineClose/> 
                         </div>
@@ -89,7 +85,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex flex-col gap-y-3'>
                     <NavItems/> 
-                    <div className='ml-10'>
+                    <div className='flex flex-col gap-y-10'>
                       {data?.user ? (                
                       <span className='text-black uppercase  hover:border-b-4 hover:border-b-yellow-600' style={{cursor:"pointer"}} onClick={()=>logOut()} >Logout</span>  
                        ): (
@@ -127,3 +123,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

@@ -37,9 +37,6 @@ const login = () => {
       });
     
 
-       
-      console.log(data)
-      console.log(result)
     localStorage.setItem("result",JSON.stringify(result))
 
     if (result.error) {
