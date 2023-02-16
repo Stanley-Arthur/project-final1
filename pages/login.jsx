@@ -8,7 +8,7 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { IoMailOpenOutline } from "react-icons/io5";
 import Cookies from "js-cookie";
 
-const login = () => {
+const Login = () => {
   const [open, setOpen] =useState(false)  
   const  handleClick =()=>{
       setOpen(!open)
@@ -87,4 +87,4 @@ const login = () => {
   );
 };
 
-export default dynamic (()=> Promise.resolve(login),{ssr:false})
+export default dynamic (()=> Promise.resolve(Login),{ssr:false})
