@@ -2,15 +2,17 @@ import Product from '@/models/product';
 import db from '../../../utils/dbConnect';
 
 export default async function handler(req, res) {
+    const {method, cookies} = req
+    const token = cookies.token
    
-   if (req.method !=="GET" && req.method !== "POST"){
+   if (method !=="GET" && method !== "POST"){
     res.status(405).json({error: 'only POST and GET methods are allowed'})
    }
 
    db.connect()
    
 
-   if (req.method =="GET"){
+   if (method =="GET"){
 
     try{
         const products= await Product.find();
@@ -21,7 +23,10 @@ export default async function handler(req, res) {
     }
    }
 
-   if (req.method == "POST"){
+   if (method == "POST"){
+    if (!token || token !== process.env.TOKEN_KEY){
+        return res.status(401).json("not authenticated")
+    }
     try{
         const product= await Product.create(req.body);
         res.status(201).json(product)

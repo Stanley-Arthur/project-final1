@@ -2,7 +2,9 @@ import Product from '@/models/product';
 import db from '../../../utils/dbConnect';
 
 export default async function handler(req, res) {
-    const {method, query:{id}} =req
+    const {method, query:{id}, cookies} =req
+
+    const token = cookies.token
    
 
 
@@ -21,6 +23,9 @@ export default async function handler(req, res) {
    }
 
    if (method === "PUT"){
+    if (!token || token !== process.env.TOKEN_KEY){
+        return res.status(401).json("not authenticated")
+    }
     try{
         const products= await Product.create(req.body);
         res.status(201).json(products)
@@ -30,6 +35,9 @@ export default async function handler(req, res) {
     }
    } 
    if (method === "DELETE"){
+    if (!token || token !== process.env.TOKEN_KEY){
+        return res.status(401).json("not authenticated")
+    }
     try{
         await Product.findByIdAndDelete(id);
         res.status(201).json("the products is deleted successfully")
