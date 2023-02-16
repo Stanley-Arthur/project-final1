@@ -11,7 +11,7 @@ const Terms = () => {
               <p className='text-gray-500  text-xl'>
               Welcome to the SmartSoft Business Solutions website (the "Site"). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these "Terms of Use"), govern your access to and use of the Site, including any content, functionality and services offered on or through the Site, whether as a guest or a registered user.
 
-Please read the Terms of Use carefully before you start to use the Site. By using the Site, you accept and agree to be bound and abide by these Terms of Use and our Privacy Policy, found at [insert link], incorporated herein by reference. If you do not want to agree to these Terms of Use or the Privacy Policy, you must not access or use the Site.
+Please read the Terms of Use carefully before you start to use the Site. By using the Site, you accept and agree to be bound and abide by these Terms of Use and our Privacy Policy, found at [&apos;insert link&apos;], incorporated herein by reference. If you do not want to agree to these Terms of Use or the Privacy Policy, you must not access or use the Site.
 
 This Site is offered and available to users who are 18 years of age or older. By using this Site, you represent and warrant that you are of legal age to form a binding contract with the Company and meet all of the foregoing eligibility requirements. If you do not meet all of these requirements, you must not access or use the Site.
 
@@ -33,7 +33,7 @@ To transmit, or procure the sending of, any advertising or promotional material,
 
 To impersonate or attempt to impersonate the Company, a Company employee, another user, or any other person or entity.
 
-To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Site, or which, as determined by the Company, may harm the Company or users of the Site or expose them to liability.
+To engage in any other conduct that restricts or inhibits anyone&apos;s use or enjoyment of the Site, or which, as determined by the Company, may harm the Company or users of the Site or expose them to liability.
 
 User Content
 

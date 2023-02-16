@@ -5,7 +5,7 @@ import Add from '@/components/Add'
 import AddButton from '@/components/AddButton'
 
 
-export default function  products  ({equipment, admin})  {
+export default function  Products  ({equipment, admin})  {
   const [close , setClose]=useState(true)
   return (
     <div>

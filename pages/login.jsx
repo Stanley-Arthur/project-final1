@@ -72,7 +72,7 @@ const Login = () => {
           </div>
           <div className="text-center text-grey-400 text-sm mt-4 ">
             <h1 className="">
-              Don't have an account?{" "}
+              Don't have an account?
               <Link href="/register" legacyBehavior>
                 <a>
                 <span className="text-indigo-500">Sign up</span>

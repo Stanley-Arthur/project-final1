@@ -3,7 +3,6 @@ import NavItems from './NavItems'
 import {AiOutlineClose, AiOutlineMenu,AiOutlineMail,AiOutlineTwitter} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
-import {GiSmart} from 'react-icons/gi'
 import Image from 'next/legacy/image'
 import { useSelector } from 'react-redux'
 import Link from 'next/link'
@@ -35,7 +34,7 @@ const Navbar = () => {
      <div className=' fixed w-full  h-32 shadow-xl z-[100] bg-gray-900 '>
         <div className=' flex xl:justify-between justify-between  items-center w-full h-full  px-2 2xl:px-16'>
             <div className='text-white  mr-9 w-[120px] h-[120px]  '>
-            <Image src="/img/20230213_143501_0000.png" width={2000} height={2000} className="w-full h-full"/>
+            <Image alt='' src="/img/20230213_143501_0000.png" width={2000} height={2000} className="w-full h-full"/>
             </div>
             <div className='hidden md:block text-white'>
                 <NavItems/>
@@ -72,7 +71,7 @@ const Navbar = () => {
                 <div>
                     <div className='flex w-full items-center justify-between'>
                        <div className='inline-flex cursor-pointer   w-32 h-32 '>
-                         <Image src="/img/20230213_143501_0000.png" width={2000} height={2000} className="w-full h-full"/>
+                         <Image alt='' src="/img/20230213_143501_0000.png" width={2000} height={2000} className="w-full h-full"/>
                         </div>
  
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer ' >

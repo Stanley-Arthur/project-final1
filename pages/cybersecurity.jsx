@@ -8,7 +8,7 @@ const cybersecurity = () => {
   return (
     <div className='flex flex-col gap-y-4'>
       <div className="flex flex-col  pt-20 h-full w-full relative">
-        <Image src="/img/adi.jpg " className=' object-cover  w-full h-screen  'width={1000} height={1000}  />
+        <Image src="/img/adi.jpg " className=' object-cover  w-full h-screen  ' alt='' width={1000} height={1000}  />
         <span className=' bg-gradient-to-r from-purple-500/50 to-pink-500/50 h-screen  w-full absolute'/>
        
         <div className='absolute space-y-8 top-[40%] left-[25%] '>
@@ -36,23 +36,23 @@ const cybersecurity = () => {
               <p className='text-gray-500'>Every organization needs to establish the basic layers of cyber protection. Executech provides robust products and services for your cyber defense. Our cyber products include:</p>
               <div className='font-bold space-y-3 text-xl'>
                 <p className='flex flex-row space-x-2 '>
-                  <Image src="/img/icons8-checkmark-24.png" className='mr-4' width={30} height={20}/>
+                  <Image src="/img/icons8-checkmark-24.png" className='mr-4' alt='' width={30} height={20}/>
                   Firewalls
                 </p>
                 <p className='flex flex-row space-x-2 '>
-                  <Image src="/img/icons8-checkmark-24.png" className='mr-4' width={30} height={20}/>
+                  <Image src="/img/icons8-checkmark-24.png" className='mr-4' alt='' width={30} height={20}/>
                   Anti-Ransomware Software
                 </p>
                 <p className='flex flex-row space-x-2  '>
-                <Image src="/img/icons8-checkmark-24.png" className='mr-4' width={30} height={20}/>
+                <Image src="/img/icons8-checkmark-24.png" className='mr-4' alt='' width={30} height={20}/>
                   Network Monitoring
                 </p>
                 <p className='flex flex-row space-x-2  '>
-                <Image src="/img/icons8-checkmark-24.png" className='mr-4' width={30} height={20}/>
+                <Image src="/img/icons8-checkmark-24.png" className='mr-4' alt='' width={30} height={20}/>
                   Employee Training
                 </p>
                 <p className='flex flex-row space-x-2 '>
-                <Image src="/img/icons8-checkmark-24.png" className='mr-4' width={30} height={20}/>
+                <Image src="/img/icons8-checkmark-24.png" className='mr-4' alt='' width={30} height={20}/>
                   Email Security and spam Filter
                 </p>
               </div>
@@ -63,7 +63,7 @@ const cybersecurity = () => {
             </p>
           </div>
           <div className='md:w-[50%] w-full'>
-            <Image className='w-[500px] h-96 object-cover' src="/img/is.jpg" width={500} height={500}  />
+            <Image className='w-[500px] h-96 object-cover' src="/img/is.jpg" width={500} height={500} alt='' />
           </div>
         </div>
 

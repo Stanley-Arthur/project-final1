@@ -10,7 +10,7 @@ const Approach = () => {
   return (
     <div className='flex flex-col gap-y-4'>
       <div className="flex flex-col   pt-20 h-full w-full relative">
-        <Image src="/img/appro.jpg " className=' object-cover  w-full h-screen  ' width={1000} height={1000} />
+        <Image alt='' src="/img/appro.jpg " className=' object-cover  w-full h-screen  ' width={1000} height={1000} />
         <span className=' bg-gradient-to-r from-purple-500/50 to-pink-500/50 h-screen  w-full absolute'/>
        
         <div className='absolute space-y-8 top-[40%] left-[25%] '>

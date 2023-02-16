@@ -40,24 +40,24 @@ const Orders = ({ order }) => {
             </div>
             <div className='mt-10 flex flex-row justify-between w-[80%]'> 
                 <div className={statusClass(0)}>
-                    <Image src="/img/paid.png" width={30} height={30}/>
+                    <Image alt='' src="/img/paid.png" width={30} height={30}/>
                     <span>Payment</ span>
                     <div >
-                        <Image src="/img/checked.png"   width={20} height={20}/>
+                        <Image alt='' src="/img/checked.png"   width={20} height={20}/>
                     </div>
                 </div>
                 <div className={statusClass(1)}>
-                    <Image src="/img/bike.png"  width={30} height={30}/>
+                    <Image alt='' src="/img/bike.png"  width={30} height={30}/>
                     <span>Delivery</span> 
                     <div >
-                        <Image src="/img/checked.png" className={`checkedIcon ${statusClass(1)}`}  width={20} height={20}/>
+                        <Image alt='' src="/img/checked.png" className={`checkedIcon ${statusClass(1)}`}  width={20} height={20}/>
                     </div>  
                 </div>
                 <div className={statusClass(2)}>
-                    <Image src="/img/delivered.png" width={30} height={30}/>
+                    <Image alt='' src="/img/delivered.png" width={30} height={30}/>
                     <span>Delivered</span>
                     <div > 
-                        <Image src="/img/checked.png" className={`checkedIcon ${statusClass(2)}`}  width={20} height={20}/>
+                        <Image alt='' src="/img/checked.png" className={`checkedIcon ${statusClass(2)}`}  width={20} height={20}/>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@ export default dynamic (()=> Promise.resolve(Orders),{ssr:false})
 
 
 {/* <div className={`done ${statusClass(0)}`}>
-<Image src="/img/paid.png" width={30} height={30}/>
+<Image alt='' src="/img/paid.png" width={30} height={30}/>
 <span>Payment</ span>
 <div >
     <Image src="/img/checked.png"  width={20} height={20}/>
