@@ -47,7 +47,7 @@ const  Cart=()=> {
 
 
     // Custom component to wrap the PayPalButtons and handle currency changes
-    const ButtonWrapper = ({ currency, showSpinner ,options}) => {
+    const ButtonWrapper = ({ currency, showSpinner}) => {
         // usePayPalScriptReducer can be use only inside children of PayPalScriptProviders
         // This is the main reason to wrap the PayPalButtons in a new component
         const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
@@ -60,7 +60,7 @@ const  Cart=()=> {
                     currency: currency
                 }
             });
-        }, [currency, showSpinner,options]);
+        }, [currency, showSpinner]);
 
 
         return (<>
