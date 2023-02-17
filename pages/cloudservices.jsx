@@ -66,7 +66,7 @@ const cloudservices = () => {
           </div>
         </div>
         <div className='md:w-[50%] w-full'>
-          <Image className='w-[500px] min-h-[350px] object-cover' src="/img/cl.jpg" width={500} height={500}  />
+          <Image alt='' className='w-[500px] min-h-[350px] object-cover' src="/img/cl.jpg" width={500} height={500}  />
         </div>
       </div>
       <Carousel/>
