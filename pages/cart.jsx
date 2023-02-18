@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic'
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { reset } from '@/redux/cartSlice';
-import OrderDetails from '@/components/orderDetails';
+import OrderDetails from '@/components/OrderDetails';
 
 
 const  Cart=()=> {
